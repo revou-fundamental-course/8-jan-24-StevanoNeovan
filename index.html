@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Berhitung Yukk</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!--- Header / Navbar --->
+	
+	<header> 
+		<h1>Kalkulator Matematika</h1>
+		<h3>Welcome to Kalkulator Matematika!!</h3>
+	</header>
+    <nav class="container">
+		<div class="luas persegi">
+		  <a href="#LuasPersegi">
+			<button> Luas Persegi dan Keliling Persegi</button> 
+		  </a>
+		</div>
+
+	</nav>
+   
+	<!--- Content --->
+	
+	<section>
+		   <h2 id="LuasPersegi"> Luas Persegi dan Keliling Persegi</h2>
+	    <div class="kotak">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Persegi.png" alt="picturepersegi">
+		</div>
+		   <h1 class="headerluas">Hitung Luas dan Keliling Persegi</h1>
+		   <p>Rumus Luas Persegi: L = S x S<br>Dimana: L = Luas, S = Sisi</p>
+		   <br>
+		   <p>Rumus Keliling Persegi: K = 4 x S <br> Dimana: K = Keliling, S= Sisi</p>
+		<div class="containerluas">
+			<input type="number" id="sisi" name="sisi" class="input-field" placeholder="Masukkan panjang sisi persegi">
+		</div>
+		<div class="containerluas-Button">
+			<button id="calculateButtonLuas" class="button-field" onclick="hitungLuasPersegi()">Calculate Luas</button>
+			<button id="calculateButtonKeliling" class="button-field" onclick="hitungKelilingPersegi()">Calculate Keliling</button>
+			<button id="resetButton" class="button-field" onclick="resetForm()">Reset</button>
+		</div>
+		   <p id="hasil"></p>	 
+	</section>
+	<script src="js/script.js"></script>
+</body>
+
+<!--- Footer -->
+
+<footer>
+	<p class="footer">&copy; 2024 <a href="https://github.com/StevanoNeovan" target="_blank">Stevano Neovan</a>. All rights reserved.</p>
+</footer>
+</html>
